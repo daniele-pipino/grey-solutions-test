@@ -7,7 +7,11 @@
         <span class="visually-hidden">Loading...</span>
       </div>
       <div class="d-flex flex-wrap overflow-auto">
-        <app-data-card *ngFor="let item of data" class="m-3"></app-data-card>
+        <app-data-card
+          *ngFor="let item of data"
+          class="m-3"
+          [item]="item"
+        ></app-data-card>
       </div>
     </div>
   </div>
