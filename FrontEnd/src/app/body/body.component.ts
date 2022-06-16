@@ -9,13 +9,14 @@ import { GreysolutionSeriveService } from '../services/greysolution-serive.servi
 })
 export class BodyComponent implements OnInit {
   constructor(private service: GreysolutionSeriveService) {}
+  isLoading: boolean = true;
 
   data: Array<Data> = [];
 
   getData() {
     this.service.getData().subscribe((res: any) => {
       this.data = res;
-      console.log(this.data);
+      this.isLoading = false;
     });
   }
 
