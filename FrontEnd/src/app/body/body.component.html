@@ -3,10 +3,10 @@
     <h1>Some data</h1>
     <hr />
     <div class="d-flex justify-content-center align-items-center">
-      <div class="spinner-border" role="status" *ngIf="isLoading">
+      <div class="spinner-grow bigger" role="status" *ngIf="isLoading">
         <span class="visually-hidden">Loading...</span>
       </div>
-      <div class="d-flex flex-wrap overflow-auto">
+      <div class="d-flex flex-wrap">
         <app-data-card
           *ngFor="let item of data"
           class="m-3"

@@ -1,3 +1,8 @@
 .body {
   min-height: 50vh;
 }
+
+.bigger {
+  height: 100px;
+  width: 100px;
+}
